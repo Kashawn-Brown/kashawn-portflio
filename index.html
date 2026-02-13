@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kashawn Brown — Full-Stack Developer</title>
+  <title>Kashawn Brown — Backend-Leaning Full-Stack Developer</title>
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
 
 <nav>
-  <a href="#" class="nav-name">KB</a>
+  <a href="#about" class="nav-name">KB</a>
   <div class="nav-links">
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
+    <button id="theme-toggle">&#9685; Light</button>
   </div>
 </nav>
 
@@ -24,49 +25,49 @@
   <header class="header" id="about">
     <div>
       <div class="header-label">
-        Full-Stack Developer
-        <span class="open-badge">● Open to Work</span>
+        Software Developer &middot; Backend-Leaning
+        <span class="open-badge">&#9679; Open to Work</span>
       </div>
       <div class="header-name">Kashawn<br/><em>Brown</em></div>
     </div>
     <div class="header-meta">
       kashawnbrown@hotmail.com<br/>
-      (905) 550-0732<br/>
-      <a href="https://linkedin.com/in/kashawn-brown/">linkedin.com/in/kashawn-brown</a><br/>
+      Toronto, Ontario, Canada<br/>
+      <a href="https://linkedin.com/in/kashawn-brown/">linkedin.com/in/kashawn-brown</a>
       <a href="https://github.com/Kashawn-Brown">github.com/Kashawn-Brown</a>
     </div>
   </header>
 
   <!-- INTRO -->
   <div class="intro-banner fade-in">
-    <p>I'm a <strong>full-stack developer</strong> who builds production-ready systems end-to-end — from secure, performant APIs to responsive user-facing interfaces. I care deeply about <strong>code quality, reliability, and shipping things that actually work</strong> at scale. B.Sc. Computer Science, University of Western Ontario.</p>
+    <p>I&rsquo;m a 2023 CS grad targeting a junior software engineering role &mdash; ideally <strong>backend-leaning</strong>. I&rsquo;ve been focused on building and shipping real applications end-to-end: production APIs, data models, auth systems, and cloud deployments. I&rsquo;m strongest on the system core and I&rsquo;m actively sharpening fundamentals so I can <strong>ramp quickly and contribute clearly</strong> on a team.</p>
   </div>
 
   <!-- ABOUT -->
-  <div class="section fade-in">
+  <div class="section fade-in" id="about-section">
     <div class="section-header">
       <span class="section-num">01</span>
       <h2 class="section-title">About</h2>
       <div class="section-rule"></div>
     </div>
-    <p>I'm a Toronto-based developer with a passion for building systems that are fast, secure, and maintainable. I take pride in owning features end-to-end — from database schema to deployed cloud infrastructure — and I bring the same rigour to side projects as I do to professional work.</p>
-    <p>Outside of code, I've spent years teaching 120+ students programming and AI concepts, which sharpened both my communication skills and my ability to break down complex problems simply.</p>
+    <p>I build backend systems the way I&rsquo;d want to maintain them: clean layering, explicit contracts, and tests that actually catch regressions. My best projects start as a working v1, then get better through refactors, tighter boundaries, and real-world use.</p>
+    <p>Outside of code, I&rsquo;ve spent years teaching 120+ students programming and AI &mdash; which taught me how to communicate complex ideas clearly and give feedback that actually helps people improve.</p>
     <div class="about-grid">
       <div class="about-block">
         <div class="about-block-label">Education</div>
-        <div class="about-block-value">B.Sc. Computer Science<br/>University of Western Ontario, 2023</div>
+        <div class="about-block-value">BSc Computer Science<br/>University of Western Ontario &rsquo;23<br/>Data structures, algorithms &amp; systems</div>
       </div>
       <div class="about-block">
         <div class="about-block-label">Location</div>
         <div class="about-block-value">Toronto, Ontario, Canada<br/>Open to remote &amp; hybrid roles</div>
       </div>
       <div class="about-block">
-        <div class="about-block-label">Current Work</div>
-        <div class="about-block-value">AI Model Evaluator @ Outlier AI<br/>Oct 2024 – Present</div>
+        <div class="about-block-label">Target Roles</div>
+        <div class="about-block-value">Backend Engineer (Junior)<br/>Platform / Infrastructure<br/>Backend-leaning Full-Stack</div>
       </div>
       <div class="about-block">
         <div class="about-block-label">Interests</div>
-        <div class="about-block-value">Distributed systems, AI/LLM integration, performance engineering</div>
+        <div class="about-block-value">API design &amp; service architecture<br/>Auth/security workflows<br/>Testing, reliability &amp; DevOps</div>
       </div>
     </div>
   </div>
@@ -81,27 +82,27 @@
     <div class="skills-grid">
       <div class="skill-block">
         <div class="skill-block-label">Languages</div>
-        <div class="skill-block-tags">TypeScript, JavaScript, Java, Python, SQL, C#</div>
+        <div class="skill-block-tags">Java, TypeScript, JavaScript, Python, SQL</div>
       </div>
       <div class="skill-block">
         <div class="skill-block-label">Backend</div>
-        <div class="skill-block-tags">Node.js (Fastify/Express), Spring Boot, Microservices, REST APIs</div>
-      </div>
-      <div class="skill-block">
-        <div class="skill-block-label">Frontend</div>
-        <div class="skill-block-tags">React, Next.js, HTML/CSS</div>
-      </div>
-      <div class="skill-block">
-        <div class="skill-block-label">Cloud &amp; DevOps</div>
-        <div class="skill-block-tags">GCP, AWS, Docker, CI/CD (GitHub Actions), Cloud Run, Vercel</div>
+        <div class="skill-block-tags">Spring Boot, Node.js (Fastify/Express), REST APIs, JWT &amp; Auth workflows</div>
       </div>
       <div class="skill-block">
         <div class="skill-block-label">Data</div>
-        <div class="skill-block-tags">PostgreSQL, MySQL, MongoDB, Redis, Prisma, Firebase</div>
+        <div class="skill-block-tags">PostgreSQL, MongoDB, Prisma, Redis</div>
+      </div>
+      <div class="skill-block">
+        <div class="skill-block-label">DevOps &amp; Cloud</div>
+        <div class="skill-block-tags">Docker, GCP (Cloud Run, Cloud Build, Cloud SQL), AWS EC2, CI/CD (GitHub Actions), Vercel</div>
+      </div>
+      <div class="skill-block">
+        <div class="skill-block-label">Frontend (Supporting)</div>
+        <div class="skill-block-tags">React, Next.js, HTML/CSS</div>
       </div>
       <div class="skill-block">
         <div class="skill-block-label">Testing &amp; Quality</div>
-        <div class="skill-block-tags">Jest, JUnit, k6 load testing, integration tests, Swagger/OpenAPI</div>
+        <div class="skill-block-tags">Jest, JUnit/Mockito, integration tests, k6 load testing, Swagger/OpenAPI</div>
       </div>
     </div>
   </div>
@@ -122,21 +123,23 @@
         <div class="project-body">
           <div class="project-header">
             <div class="project-title">Career-Tracker.ca</div>
-            <a class="project-link" href="https://career-tracker.ca" target="_blank">↗ Live Site</a>
+            <a class="project-link" href="https://career-tracker.ca" target="_blank">&#8599; Live Site</a>
           </div>
           <div class="project-stack">
             <span class="project-tag">TypeScript</span>
-            <span class="project-tag">Next.js</span>
             <span class="project-tag">Fastify</span>
+            <span class="project-tag">Next.js</span>
             <span class="project-tag">PostgreSQL</span>
-            <span class="project-tag">OpenAI API</span>
-            <span class="project-tag">GCP</span>
+            <span class="project-tag">Prisma</span>
             <span class="project-tag">Redis</span>
+            <span class="project-tag">GCP</span>
+            <span class="project-tag">OpenAI API</span>
           </div>
           <ul class="project-bullets">
-            <li>Production job-application manager with AI-powered features (JD extraction, compatibility scoring) used by ~20 active users</li>
-            <li>Defense-in-depth auth: JWT + rotating refresh sessions, CSRF protection, hashed token storage, Redis rate limiting</li>
-            <li>Automated GCP deployment via Cloud Build + Cloud Run; load-tested with k6 sustaining 44–47 req/s at 0% failure</li>
+            <li>Built because Excel/Notion fell apart at volume &mdash; paste a JD and it auto-creates a structured application record with contacts and documents attached</li>
+            <li>AI feature generates a compatibility score and guidance using the JD + resume, framed as support not a hiring decision</li>
+            <li>Defense-in-depth auth: JWT + rotating refresh sessions, CSRF protection, Redis rate limiting, Google OAuth</li>
+            <li>Deployed on GCP (Cloud Run, Cloud Build, Cloud SQL, Secret Manager); load-tested with k6 sustaining 44&ndash;47 req/s at 0% failure</li>
           </ul>
         </div>
       </div>
@@ -148,21 +151,22 @@
         <div class="project-body">
           <div class="project-header">
             <div class="project-title">MicroFlix</div>
-            <span class="project-no-link">Not Currently Hosted</span>
+            <span class="project-no-link">Not Hosted</span>
           </div>
           <div class="project-stack">
             <span class="project-tag">Java</span>
             <span class="project-tag">Spring Boot</span>
             <span class="project-tag">Eureka</span>
             <span class="project-tag">Next.js</span>
-            <span class="project-tag">AWS EC2</span>
-            <span class="project-tag">Docker</span>
             <span class="project-tag">PostgreSQL</span>
+            <span class="project-tag">Docker</span>
+            <span class="project-tag">AWS EC2</span>
           </div>
           <ul class="project-bullets">
-            <li>Microservices architecture with Eureka service discovery and stateless JWT auth on AWS EC2</li>
-            <li>PostgreSQL index tuning via EXPLAIN ANALYZE improved throughput from ~200 → ~550 req/s at 20 concurrent users</li>
+            <li>Microservice-based movie platform built to practice distributed system fundamentals: service discovery, gateway patterns, isolated deployments</li>
+            <li>PostgreSQL index tuning via EXPLAIN ANALYZE improved throughput from ~200 &rarr; ~550 req/s at 20 concurrent users</li>
             <li>Containerized with Docker; GitHub Actions CI builds/tests/pushes images on every merge to main</li>
+            <li>Deployed on AWS EC2 &mdash; provisioned instance, configured security groups, ran versioned Docker images</li>
           </ul>
         </div>
       </div>
@@ -178,40 +182,32 @@
       <div class="section-rule"></div>
     </div>
     <div class="bring-list">
-      <div class="bring-item"><div class="bring-item-dot"></div><span><strong>Full ownership mentality</strong> — Built, deployed, monitored, and maintained production apps solo. I take features from idea to live system.</span></div>
-      <div class="bring-item"><div class="bring-item-dot"></div><span><strong>Security-first thinking</strong> — Auth, CSRF, hashed storage, and rate limiting are part of the design from day one.</span></div>
-      <div class="bring-item"><div class="bring-item-dot"></div><span><strong>Performance engineering</strong> — I validate with real data (k6, EXPLAIN ANALYZE) and iterate until numbers improve.</span></div>
-      <div class="bring-item"><div class="bring-item-dot"></div><span><strong>AI integration experience</strong> — Production-tested LLM features with structured outputs and server-side validation.</span></div>
-      <div class="bring-item"><div class="bring-item-dot"></div><span><strong>Strong communicator</strong> — Taught 120+ students, built curricula, and wrote detailed code-review rationales at Outlier AI.</span></div>
+      <div class="bring-item"><div class="bring-item-dot"></div><span><strong>Ownership &amp; shipping</strong> &mdash; I can take a product from idea to deployed and used. Career-Tracker is live, has real users, and gets iterated on.</span></div>
+      <div class="bring-item"><div class="bring-item-dot"></div><span><strong>Backend foundations</strong> &mdash; APIs, data models, and auth are where I&rsquo;m most comfortable. I design for correctness and maintainability, not just the happy path.</span></div>
+      <div class="bring-item"><div class="bring-item-dot"></div><span><strong>Security-first thinking</strong> &mdash; Auth, CSRF protection, hashed storage, and rate limiting are part of the design from day one, not afterthoughts.</span></div>
+      <div class="bring-item"><div class="bring-item-dot"></div><span><strong>Performance engineering</strong> &mdash; I validate with real data (k6, EXPLAIN ANALYZE) and iterate until numbers improve.</span></div>
+      <div class="bring-item"><div class="bring-item-dot"></div><span><strong>Persistence</strong> &mdash; Once I commit to something, I&rsquo;m consistent until it&rsquo;s done and done well.</span></div>
+      <div class="bring-item"><div class="bring-item-dot"></div><span><strong>Clear communication</strong> &mdash; Taught 120+ students, wrote detailed code-review rationales at Outlier AI, and built curricula from scratch.</span></div>
     </div>
   </div>
 
   <!-- CTA -->
   <div class="cta fade-in" id="contact">
-    <div class="cta-text">Let's build something <em>reliable</em> together — I'd love to connect.</div>
+    <div class="cta-text">Let&rsquo;s build something <em>reliable</em> together &mdash; I&rsquo;d love to connect.</div>
     <div class="cta-contact">
       <a href="mailto:kashawnbrown@hotmail.com">kashawnbrown@hotmail.com</a>
-      <span>(905) 550-0732</span>
       <a href="https://linkedin.com/in/kashawn-brown/">LinkedIn</a>
       <a href="https://github.com/Kashawn-Brown">GitHub</a>
     </div>
   </div>
 
   <div class="footer">
-    <span>KASHAWN BROWN · FULL-STACK DEVELOPER</span>
-    <span>© 2026</span>
+    <span>KASHAWN BROWN &middot; SOFTWARE DEVELOPER</span>
+    <span>&copy; 2026</span>
   </div>
 
 </div>
 
-<script>
-  // Scroll-triggered fade-ins
-  const observer = new IntersectionObserver(
-    (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
-    { threshold: 0.1 }
-  );
-  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
