@@ -1,9 +1,7 @@
 /* ============================================
-   KASHAWN BROWN — PORTFOLIO
-   script.js
+   KASHAWN BROWN — PORTFOLIO · script.js
    ============================================ */
 
-/* ── Theme Toggle ── */
 const THEME_KEY = 'kb-theme';
 
 function applyTheme(theme) {
@@ -24,7 +22,6 @@ function toggleTheme() {
   applyTheme(next);
 }
 
-/* ── Scroll-triggered fade-ins ── */
 function initFadeIns() {
   const observer = new IntersectionObserver(
     (entries) => entries.forEach(e => {
@@ -33,12 +30,11 @@ function initFadeIns() {
         observer.unobserve(e.target);
       }
     }),
-    { threshold: 0.08 }
+    { threshold: 0.07 }
   );
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 }
 
-/* ── Anchor scroll offset fix (for sticky nav) ── */
 function initAnchorFix() {
   const NAV_HEIGHT = 52;
   document.querySelectorAll('a[href^="#"]').forEach(link => {
@@ -47,40 +43,36 @@ function initAnchorFix() {
       const target = document.getElementById(id);
       if (!target) return;
       e.preventDefault();
-      const top = target.getBoundingClientRect().top + window.scrollY - NAV_HEIGHT - 16;
+      const top = target.getBoundingClientRect().top + window.scrollY - NAV_HEIGHT - 20;
       window.scrollTo({ top, behavior: 'smooth' });
     });
   });
 }
 
-/* ── Active nav highlight on scroll ── */
 function initActiveNav() {
-  const sections = document.querySelectorAll('section[id], div[id], header[id]');
+  const sections = document.querySelectorAll('[data-section]');
   const navLinks = document.querySelectorAll('nav .nav-links a');
-
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           navLinks.forEach(a => a.classList.remove('active'));
-          const active = document.querySelector(`nav .nav-links a[href="#${entry.target.id}"]`);
+          const id = entry.target.getAttribute('data-section');
+          const active = document.querySelector(`nav .nav-links a[href="#${id}"]`);
           if (active) active.classList.add('active');
         }
       });
     },
-    { rootMargin: '-30% 0px -60% 0px' }
+    { rootMargin: '-20% 0px -70% 0px' }
   );
-
   sections.forEach(s => observer.observe(s));
 }
 
-/* ── Init ── */
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initFadeIns();
   initAnchorFix();
   initActiveNav();
-
-  const toggleBtn = document.getElementById('theme-toggle');
-  if (toggleBtn) toggleBtn.addEventListener('click', toggleTheme);
+  const btn = document.getElementById('theme-toggle');
+  if (btn) btn.addEventListener('click', toggleTheme);
 });
